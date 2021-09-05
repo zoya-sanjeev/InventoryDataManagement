@@ -6,4 +6,10 @@ public class Inventory {
 	private Double weight;
 	private Double pricePerKG;
 	
+	public Inventory(String name, Double weight, Double pricePerKG) {
+		this.name=name;
+		this.weight=weight;
+		this.pricePerKG=pricePerKG;
+	}
+	
 }
