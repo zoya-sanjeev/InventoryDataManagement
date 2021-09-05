@@ -3,7 +3,9 @@
 public class InventoryMain {
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
+		Inventory rice=new Inventory("Rice",40.5, 38.8);
+		Inventory wheat=new Inventory("Wheat",23.6, 17.5);
+		Inventory pulses=new Inventory("Rice",10.4, 30.5);
 
 	}
 
