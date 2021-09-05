@@ -36,4 +36,8 @@ public class Inventory {
 		this.pricePerKG = pricePerKG;
 	}
 	
+	public Double calculatePrice() {
+		return this.weight*this.pricePerKG;
+	}
+	
 }

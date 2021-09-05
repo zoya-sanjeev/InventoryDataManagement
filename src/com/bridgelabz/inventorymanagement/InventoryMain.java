@@ -1,4 +1,4 @@
-	package com.bridgelabz.inventorymanagement;
+package com.bridgelabz.inventorymanagement;
 
 public class InventoryMain {
 
@@ -7,6 +7,7 @@ public class InventoryMain {
 		Inventory wheat=new Inventory("Wheat",23.6, 17.5);
 		Inventory pulses=new Inventory("Rice",10.4, 30.5);
 
+		
 	}
 
 }
