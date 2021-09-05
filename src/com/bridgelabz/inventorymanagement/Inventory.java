@@ -12,4 +12,28 @@ public class Inventory {
 		this.pricePerKG=pricePerKG;
 	}
 	
+	public String getName() {
+		return name;
+	}
+
+	public void setName(String name) {
+		this.name = name;
+	}
+
+	public Double getWeight() {
+		return weight;
+	}
+
+	public void setWeight(Double weight) {
+		this.weight = weight;
+	}
+
+	public Double getPricePerKG() {
+		return pricePerKG;
+	}
+
+	public void setPricePerKG(Double pricePerKG) {
+		this.pricePerKG = pricePerKG;
+	}
+	
 }
