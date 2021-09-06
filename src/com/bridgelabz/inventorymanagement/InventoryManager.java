@@ -9,7 +9,7 @@ import com.bridgelabz.linkedlist.MyNode;
 public class InventoryManager {
 	static Scanner scanner =new Scanner(System.in);
 	
-	static LinkedList<Inventory> invetoryList=new LinkedList<>();
+	static LinkedList<Inventory> inventoryList=new LinkedList<>();
 	static InventoryFactory inventoryFactory=new InventoryFactory();
 	
 	
@@ -20,9 +20,19 @@ public class InventoryManager {
 			System.out.println("Enter name of inventory item");
 			String itemName=scanner.next();
 			Inventory item=inventoryFactory.createInventory(itemName);
-			invetoryList.add((INode)item);
+			inventoryList.add(new MyNode(item));
 		}
 	
+		
+	}
+	public static void showPrice() {
+			INode node=inventoryList.getHead();
+			while(node!=null) {
+				Inventory item=(Inventory) node.getKey();
+				System.out.println(item.getName());
+				System.out.println("Price:"+item.calculatePrice());
+				node=node.getNext();
+			}
 		
 	}
 	
@@ -31,7 +41,7 @@ public class InventoryManager {
 		System.out.println("Enter number of items");
 		int numberOfItems=Integer.parseInt(scanner.next());
 		addInventory(numberOfItems);
-		
+		showPrice();
 		
 		
 	}
